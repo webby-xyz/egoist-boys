@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔐 PERSONAL BACKUP"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose what you want to backup."
+            android:textSize="16sp"
+            android:padding="12dp"/>
+
+        <CheckBox
+            android:id="@+id/contactCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📇 Contacts"
+            android:textSize="17sp"/>
+
+        <CheckBox
+            android:id="@+id/locationCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Current Location"
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/photoVideoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🖼️ SELECT PHOTOS / VIDEOS"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/selectedMediaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No photos/videos selected"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/backupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔐 CREATE ENCRYPTED BACKUP"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/restoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="♻️ RESTORE BACKUP"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
